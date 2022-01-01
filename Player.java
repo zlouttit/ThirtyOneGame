@@ -13,7 +13,9 @@ public class Player{
 	public String toString(){
 		String statement = "Cards: ";
 		for(int i = 0; i < hand.length; i++){
-			statement += hand[i] + ", ";
+			statement += hand[i];
+			if(i < hand.length-1)
+				statement += ", ";
 		}
 		statement += "\nScore: " + score;
 		return statement;
