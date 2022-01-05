@@ -7,9 +7,10 @@ public class Setup {
 	"nine", "ten", "jack", "queen", "king", "ace"};
 	public static final int[] VALUES = {2,3,4,5,6,7,8,9,10,10,10,10,11};
 	public static final int HAND_SIZE = 3;
+	private final int NUM_CARDS = 52;
 
 	public static Card[] deckGen(){
-		Card[] deck = new Card[52];
+		Card[] deck = new Card[NUM_CARDS];
 		int k = 0;
 		for(int i = 0; i < SUITES.length; i++){
 			for(int j = 0; j < RANKS.length; j++)
